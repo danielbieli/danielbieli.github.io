@@ -7,8 +7,8 @@
 		
 	
 		<!-- Combine, Minify, UnCSS every single CSS file on your Website and then load this file async in the users browser cash -->
-		<link rel="preload" href="assets/css/bulmaswatch.flatly.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="assets/css/bulmaswatch.flatly.min.css"></noscript>
+		<link rel="preload" href="/assets/css/bulmaswatch.flatly.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="/assets/css/bulmaswatch.flatly.min.css"></noscript>
 		<script>/*
  loadCSS. [c]2017 Filament Group, Inc. MIT License */
 (function(a){a.loadCSS||(a.loadCSS=function(){});var c=loadCSS.relpreload={};c.support=function(){try{var b=a.document.createElement("link").relList.supports("preload")}catch(e){b=!1}return function(){return b}}();c.bindMediaToggle=function(b){function a(){b.media=c}var c=b.media||"all";b.addEventListener?b.addEventListener("load",a):b.attachEvent&&b.attachEvent("onload",a);setTimeout(function(){b.rel="stylesheet";b.media="only x"});setTimeout(a,3E3)};c.poly=function(){if(!c.support())for(var b=a.document.getElementsByTagName("link"),
@@ -46,7 +46,7 @@ this);</script>
 		}
 		</style>		
 		<!-- Nur Async - Hier können Sie sicherstellen, dass in IE und Edge immer noch eine blockierungsfreie Last auftritt, auch wenn Skripts loadCSS in head folgen -->
-	   <script src="assets/js/bulma.min.js" async></script>
+	   <script src="/assets/js/bulma.min.js" async></script>
     </head>
     <body>
 		
