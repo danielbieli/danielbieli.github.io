@@ -8,16 +8,50 @@
 		<!-- Combine, Minify, UnCSS every single CSS file on your Website and then load this file async in the users browser cash -->
 		<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
-		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"></noscript>
+		<link rel="preload" href="/assets/css/bulmaswatch.flatly.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="assets/css/bulmaswatch.flatly.min.css"></noscript>
 		<link rel="preload" href="assets/css/hero.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<noscript><link rel="stylesheet" href="assets/css/hero.css"></noscript>				
 		<link rel="preload" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"></noscript>
-    
-		<style>@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-		</style>
-		
+		<noscript><link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"></noscript>	 
+	    	<script>/*
+ loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(a){a.loadCSS||(a.loadCSS=function(){});var c=loadCSS.relpreload={};c.support=function(){try{var b=a.document.createElement("link").relList.supports("preload")}catch(e){b=!1}return function(){return b}}();c.bindMediaToggle=function(b){function a(){b.media=c}var c=b.media||"all";b.addEventListener?b.addEventListener("load",a):b.attachEvent&&b.attachEvent("onload",a);setTimeout(function(){b.rel="stylesheet";b.media="only x"});setTimeout(a,3E3)};c.poly=function(){if(!c.support())for(var b=a.document.getElementsByTagName("link"),
+e=0;e<b.length;e++){var d=b[e];"preload"!==d.rel||"style"!==d.getAttribute("as")||d.getAttribute("data-loadcss")||(d.setAttribute("data-loadcss",!0),c.bindMediaToggle(d))}};if(!c.support()){c.poly();var f=a.setInterval(c.poly,500);a.addEventListener?a.addEventListener("load",function(){c.poly();a.clearInterval(f)}):a.attachEvent&&a.attachEvent("onload",function(){c.poly();a.clearInterval(f)})}"undefined"!==typeof exports?exports.loadCSS=loadCSS:a.loadCSS=loadCSS})("undefined"!==typeof global?global:
+this);</script>	    		
+	    <!-- Critical Path CSS - Inline -->
+		<style>
+		body {
+			font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.title {
+			color: #fff;
+		}
+
+		.subtitle {
+			color: #fff;
+		}
+
+		.navbar {
+			background-color: #34495e;
+		}
+
+		.colorful {
+		  background:
+			-webkit-linear-gradient(73deg, hsla(210, 28.77%, 28.63%, 1) 0%, hsla(210, 28.77%, 28.63%, 0) 65%),
+			-webkit-linear-gradient(65deg, hsla(317.23, 93.89%, 47.65%, 1) 10%, hsla(317.23, 93.89%, 47.65%, 0) 80%),
+			-webkit-linear-gradient(135deg, hsla(235.73, 93.75%, 44.11%, 1) 15%, hsla(235.73, 93.75%, 44.11%, 0) 80%),
+			-webkit-linear-gradient(205deg, hsla(210, 28.77%, 28.63%, 1) 100%, hsla(210, 28.77%, 28.63%, 0) 70%);
+		  background:
+			linear-gradient(17deg, hsla(210, 28.77%, 28.63%, 1) 0%, hsla(210, 28.77%, 28.63%, 0) 65%),
+			linear-gradient(25deg, hsla(317.23, 93.89%, 47.65%, 1) 10%, hsla(317.23, 93.89%, 47.65%, 0) 80%),
+			linear-gradient(315deg, hsla(235.73, 93.75%, 44.11%, 1) 15%, hsla(235.73, 93.75%, 44.11%, 0) 80%),
+			linear-gradient(245deg, hsla(210, 28.77%, 28.63%, 1) 100%, hsla(210, 28.77%, 28.63%, 0) 70%);
+		}
+		</style>	
+	    
+		<!-- Nur Async - Hier können Sie sicherstellen, dass in IE und Edge immer noch eine blockierungsfreie Last auftritt, auch wenn Skripts loadCSS in head folgen -->
 		<script src="/assets/js/bulma.min.js" async></script>
     </head>
     <body>
@@ -55,8 +89,8 @@
 		  <!-- Hero content: will be in the middle -->
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title is-1">Artikel / Blog Post</h1>
-				<h2 class="subtitle">Max 1. ganzer Satz der die H1 ergänzt, am besten mit einer Kontroverse.</h2>
+				<h1 class="title is-1">Startseite</h1>
+				<h2 class="subtitle">Von Dani</h2>
 			</div>
 		</div>
 	    		</section>
