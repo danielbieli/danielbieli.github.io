@@ -1,0 +1,28 @@
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.title {
+    color: #fff;
+}
+
+.subtitle {
+    color: #fff;
+}
+
+.navbar {
+    background-color: #34495e;
+}
+
+.colorful {
+  background:
+    -webkit-linear-gradient(73deg, hsla(210, 28.77%, 28.63%, 1) 0%, hsla(210, 28.77%, 28.63%, 0) 65%),
+    -webkit-linear-gradient(65deg, hsla(317.23, 93.89%, 47.65%, 1) 10%, hsla(317.23, 93.89%, 47.65%, 0) 80%),
+    -webkit-linear-gradient(135deg, hsla(235.73, 93.75%, 44.11%, 1) 15%, hsla(235.73, 93.75%, 44.11%, 0) 80%),
+    -webkit-linear-gradient(205deg, hsla(210, 28.77%, 28.63%, 1) 100%, hsla(210, 28.77%, 28.63%, 0) 70%);
+  background:
+    linear-gradient(17deg, hsla(210, 28.77%, 28.63%, 1) 0%, hsla(210, 28.77%, 28.63%, 0) 65%),
+    linear-gradient(25deg, hsla(317.23, 93.89%, 47.65%, 1) 10%, hsla(317.23, 93.89%, 47.65%, 0) 80%),
+    linear-gradient(315deg, hsla(235.73, 93.75%, 44.11%, 1) 15%, hsla(235.73, 93.75%, 44.11%, 0) 80%),
+    linear-gradient(245deg, hsla(210, 28.77%, 28.63%, 1) 100%, hsla(210, 28.77%, 28.63%, 0) 70%);
+}
